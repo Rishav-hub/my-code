@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 list=[]
 # Test from pavan
+# test pavan 2
 baseurl="https://www.flipkart.com/search?q=i%20phone%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page="
 for page in range(1,4): ###This would crawl over various pages
     print(baseurl+str(page))
