@@ -11,7 +11,7 @@ for page in range(1,4): ###This would crawl over various pages
     c=r.content    #grab the content from the lin
     soup=BeautifulSoup(c,"html.parser")
     all=soup.find_all("div",{"class":"_3O0U0u"}) #This contains all the information in list format
-
+# This code is written by Rishav
     for item in all:
         d={}
         d["NAME"]=item.find("div",{"class":"_3wU53n"}).text #Name of the phone
